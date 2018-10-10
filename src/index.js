@@ -1,4 +1,4 @@
-export function cookie(name) {
+export default function cookie(name) {
 	return {
 		get() {
 			const nameEQ = `${name}=`;
