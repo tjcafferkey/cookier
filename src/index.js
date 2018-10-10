@@ -1,4 +1,4 @@
-export default function cookie(name) {
+export default function cookier(name) {
 	return {
 		get() {
 			const nameEQ = `${name}=`;
@@ -12,7 +12,7 @@ export default function cookie(name) {
 				}
 
 				if (c.indexOf(nameEQ) === 0) {
-					return c.substring(nameEQ.length, c.length);
+					return decodeURIComponent(c.substring(nameEQ.length, c.length));
 				}
 			}
 
@@ -30,7 +30,7 @@ export default function cookie(name) {
 				expires = "";
 			}
 
-			document.cookie = `${name}=${value}${expires}; path=/`;
+			document.cookie = `${name}=${encodeURIComponent(value)}${expires}; path=/`;
 		},
 
 		remove() {

@@ -1,7 +1,7 @@
 {
-  "name": "cookie",
+  "name": "cookier",
   "version": "1.0.0",
-  "description": "Simple utility function to get and set cookies",
+  "description": "Simple utility function to get, set and remove cookies",
   "main": "lib/index.js",
   "scripts": {
     "build": "babel --presets es2015,stage-0 -d lib/ src/",
@@ -11,20 +11,23 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tjcafferkey/cookie.git"
+    "url": "git+https://github.com/tjcafferkey/cookier.git"
   },
   "author": "Tom Cafferkey",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/tjcafferkey/cookie/issues"
+    "url": "https://github.com/tjcafferkey/cookier/issues"
   },
-  "homepage": "https://github.com/tjcafferkey/cookie#readme",
+  "homepage": "https://github.com/tjcafferkey/cookier#readme",
   "devDependencies": {
-    "babel-cli": "^6.24.1",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "babel-preset-env": "^1.7.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "babel-register": "^6.24.1",
     "chai": "^4.0.2",
-    "mocha": "^3.4.2"
+    "mocha": "^5.2.0"
   }
 }
