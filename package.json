@@ -1,6 +1,6 @@
 {
   "name": "cookier",
-  "version": "1.0.0",
+  "version": "3.0.0",
   "description": "Simple utility function to get, set and remove cookies",
   "main": "lib/index.js",
   "scripts": {
