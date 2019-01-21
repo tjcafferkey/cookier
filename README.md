@@ -28,6 +28,13 @@ cookier('cookieTwo').set(JSON.stringify({
 }));
 ```
 
+### Set cookies with expiry time
+
+```javascript
+//sets a cookie with an expiry of 86400 seconds, or one day.
+cookier('cookieOne').set('true', 1);
+```
+
 ### Get cookies
 
 ```javascript
